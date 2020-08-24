@@ -1,0 +1,75 @@
+{{!-- Home Page --}}
+{{!< default}}
+<main>
+	<div class="hero">
+		<div class="org-name">UC BERKELEY IEEE</div>
+		<div class="org-description">ADVANCING TECHNOLOGY FOR HUMANITY</div>
+		<div class="org-age">Since 1912</div>
+		<div id="scroll-btn">
+			<div class="arrow"></div>			
+		</div>
+	</div>
+	<section class="left">
+		<h1>STUDENT LEADERS</h1>
+		<p>The <b>UC Berkeley IEEE</b> Student Branch was established in 1912 and has been one of the most <b>active</b> engineering student organizations on campus ever since. </p>
+		<a class="btn">ABOUT US</a>
+	</section>
+
+	<section class="right">
+		<h1>CONNECT TO OTHERS</h1>
+		<p>We aim to promote <b>professional development</b>, encourage <b>academic growth</b>, and organize <b>social activities</b> within the greater engineering community.</p>
+		<a class="btn">UPCOMING EVENTS</a>
+	</section>
+
+	<section class="left">
+		<h1>BUILD A COMMUNITY</h1>
+		<p>With <b>500+ general members and 50+ officers and directors</b>, we continue to support engineers in their all of their endeavors. Anyone with an <b>interest in technology</b> are welcome to join. We accept everyone! </p>
+		<a class="btn">JOIN US</a>
+	</section>
+
+	<h1 class="title">OUR COMMITTEES</h1>
+
+	<div id="slide-show">
+		<div id="fwd-btn" class="btn">
+			<div class="arrow"></div>
+		</div>
+		<div class="image-container">
+			<div class="image-list">
+				<img src="{{asset 'images/temp.jpg'}}" caption="Berkeley"></img>
+				<img src="{{asset 'images/temp2.jpg'}}" caption="I am the Senate"></img>
+				<img src="{{asset 'images/temp.jpg'}}" caption="Berkeley"></img>
+				<img src="{{asset 'images/temp2.jpg'}}" caption="I am the Senate"></img>
+			</div>
+		</div>
+		<div id="bkw-btn" class="btn">
+			<div class="arrow"></div>
+		</div>
+	</div>
+	<div id="slide-caption"></div>
+</main>
+<script>
+	let imgs = Array.from(document.querySelectorAll('.image-list img'));
+	let cap = document.querySelector('#slide-caption');
+	let index = 0;
+
+	document.querySelector('#bkw-btn').onclick = () => {
+		index = (imgs.length + index + 1) % imgs.length;
+		imgs[index].scrollIntoView({
+			block: "start",
+			inline: "nearest",
+			behavior: 'smooth'
+		});
+		cap.innerText = imgs[index].getAttribute('caption');
+	};
+
+	document.querySelector('#fwd-btn').onclick = () => {
+		index = (imgs.length + index - 1) % imgs.length;
+		imgs[index].scrollIntoView({
+			block: "start",
+			inline: "nearest",
+			behavior: 'smooth'
+		});
+		cap.innerText = imgs[index].getAttribute('caption');		
+	};
+	cap.innerText = imgs[index].getAttribute('caption');	
+</script>

@@ -1,0 +1,12 @@
+<nav>
+	<button class="hamburger hamburger--elastic" type="button">
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+	<div class="navigation">
+		{{#foreach navigation}}
+			<a href="{{url absolute="false"}}">{{label}}</a>
+		{{/foreach}}		
+	</div>
+</nav>

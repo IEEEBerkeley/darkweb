@@ -1,0 +1,113 @@
+@mixin inline-animation($opts) {
+    $name: inline-#{unique-id()};
+
+    @keyframes #{$name} {
+        @content;
+    }
+
+    animation: $name $opts;
+}
+
+@mixin fluid($key, $min-vw, $max-vw, $min-size, $max-size, $unit) {
+    $wu1: with-unit($min-vw, $unit);
+    $wu2: with-unit($max-vw, $unit);
+    $wu3: with-unit($min-size, $unit);
+    $wu4: with-unit($max-size, $unit);
+
+    & {
+        #{$key}: $wu3;
+
+        @media screen and (min-width: $wu1) {
+            #{$key}: calc(#{$wu3} + #{$max-size - $min-size} * ((100vw - #{$wu1}) / #{$max-vw - $min-vw}))
+        }
+
+        @media screen and (min-width: $wu2) {
+            #{$key}: $wu4;
+        }
+    }
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size, $unit) {
+    @include fluid(font-size, $min-vw, $max-vw, $min-font-size, $max-font-size, $unit);
+}
+
+@mixin molten-leading($min-vw, $max-vw, $min-font-size, $max-font-size, $unit) {
+    @include fluid(line-height, $min-vw, $max-vw, $min-font-size, $max-font-size, $unit);
+}
+
+@mixin fluid-box($min-vw, $max-vw, $min-font-size, $max-font-size, $unit) {
+    @include fluid(width, $min-vw, $max-vw, $min-font-size, $max-font-size, $unit);
+}
+
+@mixin underline($color, $height, $max-width, $duration) {
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: width 0.3s, max-width 0.3s;
+        content: "";
+        display: block;
+        background-color: $color;
+        max-width: 0;
+        width: 0;
+        height: $height;
+        overflow: hidden;
+        pointer-events: none;
+        @content
+    }
+
+    &:hover {
+        &:after {
+            max-width: $max-width;
+            width: 100%;
+        }
+    }
+}
+
+// 
+@mixin gradient($direction, $color) {
+    background: linear-gradient($direction, $color, darken($color, 20%))
+}
+
+@mixin css-box($type) {
+    &:#{$type} {
+        position: absolute;
+        content: "";
+        display: block;
+        @content
+    }
+}
+
+@mixin screen-less($width) {
+    @media only screen and (max-width: $width) {
+        @content
+    }
+}
+
+@mixin equal-set($value, $properties...) {
+    @each $prop in $properties {
+        #{$prop}: $value;
+    }
+}
+
+@mixin corner($size, $color) {
+    &:before, &:after {
+        width: $size;
+        height: $size;
+    }
+
+    @include css-box(before) {
+        top: -$size * 0.15 * 3;
+        left: -$size * 0.15 * 3;
+        @include gradient(45deg, $color);
+        clip-path: polygon(0 0, 100% 0, 100% 15%, 15% 15%, 15% 100%, 0 100%);
+    }
+
+    @include css-box(after) {
+        bottom: -$size * 0.15 * 3;
+        right: -$size * 0.15 * 3;
+        @include gradient(-45deg, $color);
+        clip-path: polygon(85% 85%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 85%);
+    }
+}

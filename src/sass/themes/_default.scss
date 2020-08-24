@@ -1,0 +1,58 @@
+* {
+    color: white;
+    font-family: 'Open Sans', serif;
+    font-weight: 400;
+    // font-size: 18px;
+    @include fluid-type(300, 1535, 16, 18, px);
+}
+
+b {
+    font-weight: bold;
+}
+
+// .full-image {
+//     // Max width; auto height
+// }
+
+// .corners-lg {
+//     @include corner(15px, $blue);
+// }
+
+// .corners-med {
+//     @include corner(10px, $blue);
+// }
+
+// .corners-sm {
+//     @include corner(5px, $blue);
+// }
+
+// html, body {
+//     // height: 100%;
+// }
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: $black;
+    position: relative;
+    header {
+        // flex-grow: 1;
+        flex-shrink: 0;
+    }
+    main {
+        flex: 1 0 auto;
+    }
+    footer {
+        flex-shrink: 0;
+    }
+}
+
+
+
+body[nav-active] {
+    overflow: hidden;
+    main {
+        pointer-events: none;
+    }
+}

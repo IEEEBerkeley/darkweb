@@ -1,0 +1,68 @@
+section {
+    $margin-max: 120;
+    $margin-min: 25;
+
+    @include fluid(max-width, 300, 1535, 70, 40, vw);
+
+    background-color: rgba($white, 0.3);
+    position: relative;
+    padding: 10px 30px;
+    margin: 100px auto;
+    h1 {
+        margin: 0;
+        margin-bottom: 15px;
+        // font-weight: 600;
+        letter-spacing: 3px;
+        // font-size: 35px;
+        @include fluid-type(300, 1535, 25, 35, px);
+    }
+    p {
+        margin: 0;
+        margin-bottom: 30px;
+        // @include fluid-type(300, 1535, 16, 18, px);
+    }
+    .btn {
+        position: absolute;
+        padding: 10px 25px;
+        @include gradient(90deg, $blue);
+        bottom: 0;
+        transform: translateY(50%);
+        cursor: pointer;
+        //color: $white;
+        transition: color 0.3s;
+        display: block;
+    }
+
+    &.left {
+        // margin-left: 120px;
+        @include fluid(margin-left, 300, 1535, $margin-min, $margin-max, px);
+        margin-right: auto;
+        text-align: left;
+        .btn {
+            right: 20px;
+        }
+        @include css-box(before) {
+            height: 100%;
+            width: 16px;
+            top: 0;
+            left: -32px;
+            @include gradient(90deg, $blue);
+        }
+    }
+    &.right {  
+        // margin-right: 120px;
+        @include fluid(margin-right, 300, 1535, $margin-min, $margin-max, px);        
+        margin-left: auto;
+        text-align: right;        
+        .btn {
+            left: 20px;
+        }
+        @include css-box(before) {
+            height: 100%;
+            width: 16px;
+            top: 0;
+            right: -32px;
+            @include gradient(90deg, $blue);
+        }
+    }
+}

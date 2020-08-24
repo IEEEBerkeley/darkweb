@@ -1,0 +1,25 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:build": "node-sass sass -o ../assets/css --output-style compressed",
+    "sass:watch": "node-sass -w sass -o ../assets/css",
+    "ghost:watch": "cd ../../../../ && ghost start --development",
+    "ghost:stop": "cd ../../../../ && ghost stop",
+    "browser:watch": "browser-sync start --config bs-config.js",
+    "watch": "npm-run-all -c -s ghost:stop ghost:watch sass:build -p sass:watch browser:watch",
+    "build": "npm-run-all -c -s sass:build"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

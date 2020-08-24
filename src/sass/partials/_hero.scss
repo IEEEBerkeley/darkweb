@@ -1,0 +1,42 @@
+.hero {
+    text-align: center;
+    height: calc(100vh - 70px - 75px - 20px);
+    position: relative;
+    h1 {
+        // font-size: 50px;
+        @include fluid-type(300, 1535, 40, 50, px);
+        // margin-top: 100px;
+        margin-top: 75px;
+    }
+    h2 {
+        // font-size: 40px;
+        @include fluid-type(300, 1535, 35, 40, px);
+        font-weight: 200;
+        padding: 0 20px;
+    }
+    overflow: hidden;
+    // Should be in custom pages
+
+    .org-name, .org-description, .org-age {
+        text-align: center;
+        letter-spacing: 5px;
+    }
+
+    .org-name {
+        // font-size: 50px;
+        @include fluid-type(300, 1535, 40, 50, px);
+        // margin-top: 75px;
+        // @include fluid(margin-top, 300, 1535, 20, 75, px);
+        margin-top: 75px;
+    }
+
+    .org-description {
+        // font-size: 40px;
+        @include fluid-type(300, 1535, 35, 40, px);    
+        margin: 60px auto;
+    }
+
+    .org-age {
+        font-size: 20px;
+    }    
+}

@@ -1,0 +1,25 @@
+#background-doodle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        img {
+            width: 40vmax;
+            height: 50vmax;
+            object-fit: contain;
+            &:nth-child(1) {
+                transform: translateX(-5vmax);
+            }
+            &:nth-child(2) {
+                transform: translateX(5vmax);
+            }
+        }
+    }
+}

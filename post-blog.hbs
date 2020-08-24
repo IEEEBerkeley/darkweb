@@ -1,0 +1,25 @@
+{{!< default}}
+<main>
+	{{#post}}
+		<div class="hero">
+			<h1>{{title}}</h1>
+			<h2>{{excerpt}}</h2>
+			<div id="scroll-btn">
+				<div class="arrow"></div>			
+			</div>
+		</div>
+		<div class="post-list">
+			{{#get "posts" include="tags,authors"}}
+				{{#foreach posts}}
+				<a class="post-card" href="{{url}}">
+					<img src="{{feature_image}}">
+					<h1>{{title}}</h1>
+					<h2>{{primary_author.slug}} @ <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></h2>
+				</a>
+				{{/foreach}}
+			{{else}}
+				<h1>No Posts Found</h1>
+			{{/get}}
+		</div>
+	{{/post}}
+</main>

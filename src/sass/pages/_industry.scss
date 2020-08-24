@@ -1,0 +1,36 @@
+.sponsor-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90vw;
+	margin: 0 auto;
+	h1 {
+		font-size: 32px;
+		margin-bottom: 30px;
+	}
+	.sponsor-package {
+		text-align: center;
+		width: 50%;
+		.iframe-container {
+			position: relative;
+			display: inline-block;
+			margin: 0 auto;
+			@include corner(40px, $blue);			
+			iframe {
+				height: 100%;
+				width: 100%;
+				outline: none;
+				border: none;
+			}
+		}
+	}
+	.sponsor-section {
+		text-align: center;
+		width: 50%;
+		.sponsor-list {
+			width: 50%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+	}
+}
