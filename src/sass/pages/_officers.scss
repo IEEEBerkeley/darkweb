@@ -1,55 +1,83 @@
-.committee {
-	margin: 80px auto;
-	h1 {
-		text-align: center;
-		font-size: 40px;
-		margin-bottom: 60px;
-		letter-spacing: 2px;
-	}
-	.officers {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		.officer-card {
-			position: relative;
-			width: 200px;
-			height: 280px;
-			text-align: center;
-			background-color: rgba($white, 0.4);
-			@include css-box(before) {
-				width: 100%;
-				top: -30px;
-				height: 15px;
-				@include gradient(90deg, $blue);
-			}
-
-			img {
-				background-color: $white;
-				@include equal-set(125px, width, height);
-				border-radius: 50%;
-				margin-top: 20px;
-				overflow: hidden;
-			}
-			h1 {
-				font-size: 18px;
-				margin: 10px auto;
-			}
-			h2 {
-				letter-spacing: 2px;
-			}
-			.socials {
-				display: flex;
-                /* Makes Life Easier */
-                [github] {
-
-                }
-                [facebook] {
-
-                }
-                [linkedin] {
-
-                }
-			}
-		}
-	}
+.ieee-officer-container {
+  text-align: center;
 }
+  
+  .ieee-officer-divider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	
+	&:before, &:after {
+	  background-color: #aaa;
+	  display: inline-block;
+	  content: '';
+	  width: 100px;
+	  height: 2px;
+	  margin: 0 20px;
+	}
+	
+	@media(max-width: 600px) {
+	  & {
+		flex-direction: column;
+	  }
+	  &:before, &:after {
+		width: 80px;
+	  }
+	}
+  }
+  
+  .ieee-officer-group {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
+  }
+  
+  .ieee-officer-card {
+	background-color: #646467;
+	border-radius: 2px;
+	box-sizing: border-box;
+	padding: 25px;
+	margin: 10px;
+	text-align: center;
+	width: 200px;
+	
+	img {
+	  height: 150px;
+	  border-radius: 75px;
+	  margin-bottom: 10px;
+	  overflow: hidden;
+	}
+	
+	h3 {
+	  font-size: 1.2em;
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	p {
+	  font-size: 0.8em;
+	  margin: 0;
+	  padding: 0;
+	}
+	
+	.ieee-officer-socials {
+	  cursor: default;
+	  display: block;
+	  margin-top: 10px;
+	  
+	  a {
+		color: darken(#00629B, 0%);
+		cursor: pointer;
+		display: inline-block;
+		margin: 0 4px;
+		text-decoration: none;
+		transition: color 80ms ease;
+		
+		&:hover {
+		  color: darken(#00629B, 8%);
+		}
+	  }
+	}
+  }

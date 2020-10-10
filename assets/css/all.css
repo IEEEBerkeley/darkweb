@@ -629,9 +629,9 @@ section {
     margin: 0 auto;
     cursor: pointer;
     clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
-    animation: inline-ub7c2a855 1s infinite alternate; }
+    animation: inline-u54aebb0b 1s infinite alternate; }
 
-@keyframes inline-ub7c2a855 {
+@keyframes inline-u54aebb0b {
   from {
     opacity: 1;
     transform: translateY(5px); }
@@ -676,9 +676,9 @@ section {
       pointer-events: none; }
     #slide-show .btn#fwd-btn .arrow {
       margin-left: 50px;
-      animation: inline-ufa0a0b9b 1s infinite alternate; }
+      animation: inline-ua3529f72 1s infinite alternate; }
 
-@keyframes inline-ufa0a0b9b {
+@keyframes inline-ua3529f72 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg); }
@@ -687,9 +687,9 @@ section {
     transform: translateX(0) rotate(90deg); } }
     #slide-show .btn#bkw-btn .arrow {
       margin-right: 50px;
-      animation: inline-u67ef5ae2 1s infinite alternate; }
+      animation: inline-u22acc987 1s infinite alternate; }
 
-@keyframes inline-u67ef5ae2 {
+@keyframes inline-u22acc987 {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg); }
@@ -737,46 +737,67 @@ main .title, main #slide-caption {
 main #slide-caption {
   margin-bottom: 100px; }
 
-.committee {
-  margin: 80px auto; }
-  .committee h1 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 60px;
-    letter-spacing: 2px; }
-  .committee .officers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-    .committee .officers .officer-card {
-      position: relative;
-      width: 200px;
-      height: 280px;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0.4); }
-      .committee .officers .officer-card:before {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 100%;
-        top: -30px;
-        height: 15px;
-        background: linear-gradient(90deg, #00A6D6, #005770); }
-      .committee .officers .officer-card img {
-        background-color: #FFFFFF;
-        width: 125px;
-        height: 125px;
-        border-radius: 50%;
-        margin-top: 20px;
-        overflow: hidden; }
-      .committee .officers .officer-card h1 {
-        font-size: 18px;
-        margin: 10px auto; }
-      .committee .officers .officer-card h2 {
-        letter-spacing: 2px; }
-      .committee .officers .officer-card .socials {
-        display: flex;
-        /* Makes Life Easier */ }
+.ieee-officer-container {
+  text-align: center; }
+
+.ieee-officer-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .ieee-officer-divider:before, .ieee-officer-divider:after {
+    background-color: #aaa;
+    display: inline-block;
+    content: '';
+    width: 100px;
+    height: 2px;
+    margin: 0 20px; }
+  @media (max-width: 600px) {
+    .ieee-officer-divider {
+      flex-direction: column; }
+    .ieee-officer-divider:before, .ieee-officer-divider:after {
+      width: 80px; } }
+
+.ieee-officer-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px; }
+
+.ieee-officer-card {
+  background-color: #646467;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+  width: 200px; }
+  .ieee-officer-card img {
+    height: 150px;
+    border-radius: 75px;
+    margin-bottom: 10px;
+    overflow: hidden; }
+  .ieee-officer-card h3 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0; }
+  .ieee-officer-card p {
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0; }
+  .ieee-officer-card .ieee-officer-socials {
+    cursor: default;
+    display: block;
+    margin-top: 10px; }
+    .ieee-officer-card .ieee-officer-socials a {
+      color: #00629b;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 4px;
+      text-decoration: none;
+      transition: color 80ms ease; }
+      .ieee-officer-card .ieee-officer-socials a:hover {
+        color: #004872; }
 
 .sponsor-container {
   display: flex;
