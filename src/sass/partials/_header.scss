@@ -77,6 +77,13 @@ header {
 			}
 		}
 	}
+	nav.nav-social {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		right: 5%;
+		height: 5%;
+	}
 }
 
 body[nav-active] {
