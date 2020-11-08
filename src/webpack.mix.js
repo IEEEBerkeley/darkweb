@@ -25,15 +25,15 @@ let mix = require('laravel-mix');
      ]
    }
  });
- 
+
  mix.setResourceRoot('../assets')
  mix.setPublicPath('../assets')
  mix.sass('sass/all.scss', 'css/');
  mix.options({
    processCssUrls: false
  })
- mix.copy('sass/fonts/icomoon/*.*', '../assets/fonts/')
- mix.copy('sass/fonts/formata/*.*', '../assets/fonts/')
+ mix.copy('fonts/icomoon/*.*', '../assets/fonts/')
+ mix.copy('fonts/formata/*.*', '../assets/fonts/')
  mix.browserSync({
    proxy: "localhost:2368",
    files: [
