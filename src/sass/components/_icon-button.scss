@@ -52,7 +52,7 @@
     height: 32px;
     font-size: 0.625rem;
     z-index: 2;
-    
+
     @include respond-to('medium') {
       top: 30px;
       right: 30px;

@@ -6,7 +6,7 @@ header {
 		height: 80%;
 		z-index: 3;
 		img {
-			height: 100%;
+			height: 110%;
 			z-index: 3;
 		}
 	}
@@ -81,8 +81,9 @@ header {
 		display: flex;
 		flex-direction: column;
 		position: fixed;
-		right: 5%;
-		height: 5%;
+		right: 3%;
+		top: 4.5%;
+		text-decoration: none;
 	}
 }
 
