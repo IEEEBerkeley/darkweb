@@ -1,3 +1,185 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap);/** Icons */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-letterboxd:before {
+  content: "\E91F";
+}
+
+.icon-star:before {
+  content: "\E900";
+}
+
+.icon-arrow-left:before {
+  content: "\E901";
+}
+
+.icon-arrow-right:before {
+  content: "\E902";
+}
+
+.icon-arrow-top:before {
+  content: "\E903";
+}
+
+.icon-close:before {
+  content: "\E904";
+}
+
+.icon-comments:before {
+  content: "\E905";
+}
+
+.icon-facebook:before {
+  content: "\E906";
+}
+
+.icon-globe:before {
+  content: "\E907";
+}
+
+.icon-menu:before {
+  content: "\E908";
+}
+
+.icon-more:before {
+  content: "\E909";
+}
+
+.icon-search:before {
+  content: "\E90A";
+}
+
+.icon-twitter:before {
+  content: "\E90B";
+}
+
+.icon-behance:before {
+  content: "\E951";
+}
+
+.icon-deviantart:before {
+  content: "\E928";
+}
+
+.icon-discord:before {
+  content: "\E929";
+}
+
+.icon-flickr:before {
+  content: "\E91E";
+}
+
+.icon-github:before {
+  content: "\E930";
+}
+
+.icon-gitlab:before {
+  content: "\E92D";
+}
+
+.icon-imdb:before {
+  content: "\E90C";
+}
+
+.icon-instagram:before {
+  content: "\E92A";
+}
+
+.icon-linkedin:before {
+  content: "\E92B";
+}
+
+.icon-mixcloud:before {
+  content: "\E925";
+}
+
+.icon-mixer:before {
+  content: "\E926";
+}
+
+.icon-odnoklassniki:before {
+  content: "\E920";
+}
+
+.icon-pinterest:before {
+  content: "\E921";
+}
+
+.icon-reddit:before {
+  content: "\E919";
+}
+
+.icon-rss:before {
+  content: "\E91A";
+}
+
+.icon-snapchat:before {
+  content: "\E92C";
+}
+
+.icon-soundcloud:before {
+  content: "\E91D";
+}
+
+.icon-spotify:before {
+  content: "\E91B";
+}
+
+.icon-steam:before {
+  content: "\E914";
+}
+
+.icon-telegram:before {
+  content: "\E91C";
+}
+
+.icon-tiktok:before {
+  content: "\E922";
+}
+
+.icon-tumblr:before {
+  content: "\E923";
+}
+
+.icon-twitch:before {
+  content: "\E915";
+}
+
+.icon-vimeo:before {
+  content: "\E917";
+}
+
+.icon-vk:before {
+  content: "\E90D";
+}
+
+.icon-wechat:before {
+  content: "\E927";
+}
+
+.icon-whatsapp:before {
+  content: "\E918";
+}
+
+.icon-xing:before {
+  content: "\E924";
+}
+
+.icon-youtube:before {
+  content: "\E916";
+}
 
 /*!
  * Hamburgers
@@ -825,6 +1007,101 @@ article blockquote:before {
   transform: translateX(5vmax);
 }
 
+.ieee-officer-container {
+  text-align: center;
+}
+
+.ieee-decal-warning {
+  font-size: 1.6em;
+  padding: 1em;
+  text-align: center;
+}
+
+.ieee-decal-warning a {
+  color: #004080;
+  text-decoration: underline;
+}
+
+.ieee-officer-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ieee-officer-divider:before, .ieee-officer-divider:after {
+  background-color: #aaa;
+  display: inline-block;
+  content: '';
+  width: 100px;
+  height: 2px;
+  margin: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .ieee-officer-divider {
+    flex-direction: column;
+  }
+  .ieee-officer-divider:before, .ieee-officer-divider:after {
+    width: 80px;
+  }
+}
+
+.ieee-officer-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.ieee-officer-card {
+  background-color: #D0D0E0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.ieee-officer-card img {
+  height: 150px;
+  border-radius: 75px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.ieee-officer-card h3 {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+.ieee-officer-card p {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.ieee-officer-card .ieee-officer-socials {
+  cursor: default;
+  display: block;
+  margin-top: 10px;
+}
+
+.ieee-officer-card .ieee-officer-socials a {
+  color: #00629b;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: color 80ms ease;
+}
+
+.ieee-officer-card .ieee-officer-socials a:hover {
+  color: #004872;
+}
+
 #background-shapes {
   position: absolute;
   top: 0;
@@ -1009,11 +1286,11 @@ section.right:before {
   cursor: pointer;
   -webkit-clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
           clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
-  -webkit-animation: inline-udaa8bacc 1s infinite alternate;
-          animation: inline-udaa8bacc 1s infinite alternate;
+  -webkit-animation: inline-u85acd8e6 1s infinite alternate;
+          animation: inline-u85acd8e6 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-udaa8bacc {
+@-webkit-keyframes inline-u85acd8e6 {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1023,7 +1300,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-udaa8bacc {
+@keyframes inline-u85acd8e6 {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1085,11 +1362,11 @@ section.right:before {
 
 #slide-show .btn#fwd-btn .arrow {
   margin-left: 50px;
-  -webkit-animation: inline-udab65813 1s infinite alternate;
-          animation: inline-udab65813 1s infinite alternate;
+  -webkit-animation: inline-ubc5ea394 1s infinite alternate;
+          animation: inline-ubc5ea394 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-udab65813 {
+@-webkit-keyframes inline-ubc5ea394 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1100,7 +1377,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-udab65813 {
+@keyframes inline-ubc5ea394 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1113,11 +1390,11 @@ section.right:before {
 
 #slide-show .btn#bkw-btn .arrow {
   margin-right: 50px;
-  -webkit-animation: inline-udaa2399d 1s infinite alternate;
-          animation: inline-udaa2399d 1s infinite alternate;
+  -webkit-animation: inline-u5aab2dbe 1s infinite alternate;
+          animation: inline-u5aab2dbe 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-udaa2399d {
+@-webkit-keyframes inline-u5aab2dbe {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
@@ -1128,7 +1405,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-udaa2399d {
+@keyframes inline-u5aab2dbe {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
