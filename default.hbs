@@ -6,6 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="{{asset 'css/all.css'}}">
 	{{ghost_head}}
+	<style>
+	/* This font-face is here to make icons work if the Ghost instance is installed in a subdirectory */
+	@font-face {
+		font-family: 'icomoon';
+		src: url("{{asset 'fonts/icomoon.eot'}}");
+		src: url("{{asset 'fonts/icomoon.eot'}}") format('embedded-opentype'),
+		url("{{asset 'fonts/icomoon.ttf'}}") format('truetype'),
+		url("{{asset 'fonts/icomoon.woff'}}") format('woff'),
+		url("{{asset 'fonts/icomoon.svg'}}") format('svg');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+	@font-face {
+		font-family: Formata;
+		src: url("{{asset 'fonts/formata.otf'}}");
+	}
+	</style>
 </head>
 <body>
 	<div id="background-doodle">
