@@ -42,7 +42,7 @@
 	    }
 	    &#bkw-btn {
 	    	.arrow {
-	    		margin-right: 50px;	    		
+	    		margin-right: 50px;
 		    	@include inline-animation(1s infinite alternate) {
 		            from {
 		                opacity: 1;
@@ -79,7 +79,7 @@ main {
 	.title, #slide-caption {
 	    letter-spacing: 3px;
 	    font-size: 40px;
-	    text-align: center;	
+	    text-align: center;
 	}
 	#slide-caption {
 		margin-bottom: 100px;
