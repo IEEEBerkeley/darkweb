@@ -9,7 +9,10 @@
   @extend .content-centered;
   @extend .no-appearance;
 
-
+  &.outlined {
+    border-radius: 50%;
+    border: 1px solid var(--primary-foreground-color);
+  }
 
   &.filled {
     background-color: var(--background-color);

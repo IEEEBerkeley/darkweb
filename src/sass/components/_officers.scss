@@ -7,12 +7,12 @@
   padding: 1em;
   text-align: center;
 
+
   a {
     color: #004080;
     text-decoration: underline;
   }
 }
-
 
 
 .ieee-officer-divider {
@@ -48,7 +48,7 @@
 }
 
 .ieee-officer-card {
-  background-color: #31a4d6;
+  background-color: $blue;
   border-radius: 2px;
   box-sizing: border-box;
   padding: 25px;

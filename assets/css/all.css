@@ -844,15 +844,17 @@ article p {
 
 article a:not(.kg-bookmark-container) {
   padding: 0 10px;
-  background-color: #00A6D6;
-  border-radius: 5px;
+  background: none;
+  border: 0;
+  color: #00A6D6;
+  border-radius: 0;
   text-decoration: none;
   transition: color 0.3s, background-color 0.3s;
 }
 
 article a:not(.kg-bookmark-container):hover {
-  background-color: white;
-  color: #00A6D6;
+  background: none;
+  color: #FFFFFF;
 }
 
 article ul {
@@ -1056,7 +1058,7 @@ article blockquote:before {
 }
 
 .ieee-officer-card {
-  background-color: #31a4d6;
+  background-color: #00A6D6;
   border-radius: 2px;
   box-sizing: border-box;
   padding: 25px;
@@ -1289,11 +1291,11 @@ section.right:before {
   cursor: pointer;
   -webkit-clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
           clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
-  -webkit-animation: inline-u8f030f19 1s infinite alternate;
-          animation: inline-u8f030f19 1s infinite alternate;
+  -webkit-animation: inline-u7c00660f 1s infinite alternate;
+          animation: inline-u7c00660f 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-u8f030f19 {
+@-webkit-keyframes inline-u7c00660f {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1303,7 +1305,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-u8f030f19 {
+@keyframes inline-u7c00660f {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1365,11 +1367,11 @@ section.right:before {
 
 #slide-show .btn#fwd-btn .arrow {
   margin-left: 50px;
-  -webkit-animation: inline-u80b9240b 1s infinite alternate;
-          animation: inline-u80b9240b 1s infinite alternate;
+  -webkit-animation: inline-u0ba05e75 1s infinite alternate;
+          animation: inline-u0ba05e75 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-u80b9240b {
+@-webkit-keyframes inline-u0ba05e75 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1380,7 +1382,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-u80b9240b {
+@keyframes inline-u0ba05e75 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1393,11 +1395,11 @@ section.right:before {
 
 #slide-show .btn#bkw-btn .arrow {
   margin-right: 50px;
-  -webkit-animation: inline-u1d4b29cd 1s infinite alternate;
-          animation: inline-u1d4b29cd 1s infinite alternate;
+  -webkit-animation: inline-u9c0f872d 1s infinite alternate;
+          animation: inline-u9c0f872d 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-u1d4b29cd {
+@-webkit-keyframes inline-u9c0f872d {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
@@ -1408,7 +1410,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-u1d4b29cd {
+@keyframes inline-u9c0f872d {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
