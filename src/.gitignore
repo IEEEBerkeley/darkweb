@@ -1,5 +1,4 @@
-node_modules/
-assets/css/
-assets/mix-manifest.json
-assets/fonts/
-.DS_Store
+node_modules
+../assets/css/
+../assets/fonts/
+../assets/mix-manifest.json
