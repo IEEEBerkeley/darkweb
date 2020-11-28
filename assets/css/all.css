@@ -1242,11 +1242,11 @@ section.right:before {
   cursor: pointer;
   -webkit-clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
           clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
-  -webkit-animation: inline-u44c0216a 1s infinite alternate;
-          animation: inline-u44c0216a 1s infinite alternate;
+  -webkit-animation: inline-u59543224 1s infinite alternate;
+          animation: inline-u59543224 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-u44c0216a {
+@-webkit-keyframes inline-u59543224 {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1256,7 +1256,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-u44c0216a {
+@keyframes inline-u59543224 {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1318,11 +1318,11 @@ section.right:before {
 
 #slide-show .btn#fwd-btn .arrow {
   margin-left: 50px;
-  -webkit-animation: inline-u5ed061ff 1s infinite alternate;
-          animation: inline-u5ed061ff 1s infinite alternate;
+  -webkit-animation: inline-uff9993a5 1s infinite alternate;
+          animation: inline-uff9993a5 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-u5ed061ff {
+@-webkit-keyframes inline-uff9993a5 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1333,7 +1333,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-u5ed061ff {
+@keyframes inline-uff9993a5 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1346,11 +1346,11 @@ section.right:before {
 
 #slide-show .btn#bkw-btn .arrow {
   margin-right: 50px;
-  -webkit-animation: inline-uf5104cd9 1s infinite alternate;
-          animation: inline-uf5104cd9 1s infinite alternate;
+  -webkit-animation: inline-u39bb9b35 1s infinite alternate;
+          animation: inline-u39bb9b35 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-uf5104cd9 {
+@-webkit-keyframes inline-u39bb9b35 {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
@@ -1361,7 +1361,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-uf5104cd9 {
+@keyframes inline-u39bb9b35 {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
