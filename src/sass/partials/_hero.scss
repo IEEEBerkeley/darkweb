@@ -1,6 +1,6 @@
 .hero {
     text-align: center;
-    height: calc(100vh - 70px - 75px - 20px);
+    height: 165px;    //calc(100vh - 70px - 75px - 20px);
     position: relative;
     h1 {
         // font-size: 50px;
@@ -32,11 +32,11 @@
 
     .org-description {
         // font-size: 40px;
-        @include fluid-type(300, 1535, 35, 40, px);    
+        @include fluid-type(300, 1535, 35, 40, px);
         margin: 60px auto;
     }
 
     .org-age {
         font-size: 20px;
-    }    
+    }
 }
