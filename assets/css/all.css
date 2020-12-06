@@ -14,43 +14,46 @@
 }
 
 .icon-letterboxd:before {
-  content: "\E91F";
-}
-
-.icon-star:before {
-  content: "\E900";
-}
-
-.icon-arrow-left:before {
-  content: "\E901";
-}
-
-.icon-arrow-right:before {
   content: "\E902";
 }
 
+.icon-star:before {
+  content: "\907";
+}
+
+.icon-arrow-left:before {
+  content: "\EA40";
+}
+
+.icon-arrow-right:before {
+  content: "\EA3C";
+}
+
 .icon-arrow-top:before {
-  content: "\E903";
+  content: "\EA3A";
 }
 
 .icon-close:before {
-  content: "\E904";
+  content: "\E903";
 }
 
 .icon-comments:before {
-  content: "\E905";
+  content: "\E900";
 }
 
 .icon-facebook:before {
-  content: "\E906";
+  content: "\EA90";
+  padding: 4px;
+  border-radius: 50%;
+  border: white solid 1.5px;
 }
 
 .icon-globe:before {
-  content: "\E907";
+  content: "\E908";
 }
 
 .icon-menu:before {
-  content: "\E908";
+  content: "\E9BD";
 }
 
 .icon-more:before {
@@ -58,127 +61,136 @@
 }
 
 .icon-search:before {
-  content: "\E90A";
+  content: "\E986";
 }
 
 .icon-twitter:before {
-  content: "\E90B";
+  content: "\EA96";
+  padding: 4px;
+  border-radius: 50%;
+  border: white solid 1.5px;
 }
 
 .icon-behance:before {
-  content: "\E951";
+  content: "\EAA8";
 }
 
 .icon-deviantart:before {
-  content: "\E928";
+  content: "\EAAA";
 }
 
 .icon-discord:before {
-  content: "\E929";
+  content: "\E905";
 }
 
 .icon-flickr:before {
-  content: "\E91E";
+  content: "\EAA3";
 }
 
 .icon-github:before {
-  content: "\E930";
+  content: "\EAB0";
 }
 
 .icon-gitlab:before {
-  content: "\E92D";
+  content: "\E909";
 }
 
 .icon-imdb:before {
-  content: "\E90C";
+  content: "\E90A";
 }
 
 .icon-instagram:before {
-  content: "\E92A";
+  content: "\EA92";
+  padding: 4px;
+  border-radius: 50%;
+  border: white solid 1.5px;
 }
 
 .icon-linkedin:before {
-  content: "\E92B";
+  content: "\EACA";
+  padding: 4px;
+  border-radius: 50%;
+  border: white solid 1.5px;
 }
 
 .icon-mixcloud:before {
-  content: "\E925";
+  content: "\E90B";
 }
 
 .icon-mixer:before {
-  content: "\E926";
+  content: "\E904";
 }
 
 .icon-odnoklassniki:before {
-  content: "\E920";
+  content: "\E901";
 }
 
 .icon-pinterest:before {
-  content: "\E921";
+  content: "\EAD2";
 }
 
 .icon-reddit:before {
-  content: "\E919";
+  content: "\EAC6";
 }
 
 .icon-rss:before {
-  content: "\E91A";
+  content: "\EA9B";
 }
 
 .icon-snapchat:before {
-  content: "\E92C";
+  content: "\E90E";
 }
 
 .icon-soundcloud:before {
-  content: "\E91D";
+  content: "\EAC3";
 }
 
 .icon-spotify:before {
-  content: "\E91B";
+  content: "\EA94";
 }
 
 .icon-steam:before {
-  content: "\E914";
+  content: "\EAAC";
 }
 
 .icon-telegram:before {
-  content: "\E91C";
+  content: "\E90C";
 }
 
 .icon-tiktok:before {
-  content: "\E922";
+  content: "\E906";
 }
 
 .icon-tumblr:before {
-  content: "\E923";
+  content: "\EAB9";
 }
 
 .icon-twitch:before {
-  content: "\E915";
+  content: "\EA9F";
 }
 
 .icon-vimeo:before {
-  content: "\E917";
+  content: "\EAA0";
 }
 
+/*
 .icon-vk:before {
-  content: "\E90D";
+  content: "\e90d";
 }
-
 .icon-wechat:before {
-  content: "\E927";
+  content: "\e927";
 }
-
+*/
 .icon-whatsapp:before {
-  content: "\E918";
+  content: "\EA93";
 }
 
 .icon-xing:before {
-  content: "\E924";
+  content: "\E90D";
 }
 
 .icon-youtube:before {
-  content: "\E916";
+  content: "\EA9D";
 }
 
 /*!
@@ -436,18 +448,55 @@ header nav.nav-social {
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 3%;
+  right: 1.5%;
   top: 4.5%;
 }
 
 header nav.nav-social a {
   text-decoration: none;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+  header nav.nav-social {
+    right: 0.25%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header nav.nav-social {
+    max-height: 0;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 10%;
+    left: 35%;
+    right: 70%;
+    background-color: #1F2228;
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  header nav.nav-social a {
+    padding-top: 5px;
+    padding-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header nav.nav-social {
+    left: 32%;
+  }
 }
 
 body[nav-active] header nav .navigation {
   max-height: 40vh;
   padding-top: 90px;
+}
+
+body[nav-active] header nav.nav-social {
+  max-height: 50px;
 }
 
 footer {
@@ -882,6 +931,8 @@ article blockquote:before {
 .hero {
   text-align: center;
   height: calc(100vh - 70px - 75px - 20px);
+  width: 90%;
+  left: 5%;
   position: relative;
   overflow: hidden;
 }
@@ -1191,11 +1242,11 @@ section.right:before {
   cursor: pointer;
   -webkit-clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
           clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
-  -webkit-animation: inline-udaa8bacc 1s infinite alternate;
-          animation: inline-udaa8bacc 1s infinite alternate;
+  -webkit-animation: inline-u59543224 1s infinite alternate;
+          animation: inline-u59543224 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-udaa8bacc {
+@-webkit-keyframes inline-u59543224 {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1205,7 +1256,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-udaa8bacc {
+@keyframes inline-u59543224 {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1267,11 +1318,11 @@ section.right:before {
 
 #slide-show .btn#fwd-btn .arrow {
   margin-left: 50px;
-  -webkit-animation: inline-udab65813 1s infinite alternate;
-          animation: inline-udab65813 1s infinite alternate;
+  -webkit-animation: inline-uff9993a5 1s infinite alternate;
+          animation: inline-uff9993a5 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-udab65813 {
+@-webkit-keyframes inline-uff9993a5 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1282,7 +1333,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-udab65813 {
+@keyframes inline-uff9993a5 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1295,11 +1346,11 @@ section.right:before {
 
 #slide-show .btn#bkw-btn .arrow {
   margin-right: 50px;
-  -webkit-animation: inline-udaa2399d 1s infinite alternate;
-          animation: inline-udaa2399d 1s infinite alternate;
+  -webkit-animation: inline-u39bb9b35 1s infinite alternate;
+          animation: inline-u39bb9b35 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-udaa2399d {
+@-webkit-keyframes inline-u39bb9b35 {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
@@ -1310,7 +1361,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-udaa2399d {
+@keyframes inline-u39bb9b35 {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);

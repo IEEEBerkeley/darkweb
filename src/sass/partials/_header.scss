@@ -81,11 +81,36 @@ header {
 		display: flex;
 		flex-direction: column;
 		position: fixed;
-		right: 3%;
+		right: 1.5%;
 		top: 4.5%;
 		a {
 			text-decoration: none;
-			padding-bottom: 5px;
+			padding-bottom: 10px;
+		}
+		@include screen-less(1000px) {
+				right: 0.25%;
+		}
+		@include screen-less($nav-break) {
+			max-height: 0;
+			display: flex;
+			flex-direction: row;
+			position: fixed;
+			top: 10%;
+			// padding-top: 90px;
+			left: 35%;
+			right: 70%;
+			background-color: $black;
+			width: 100%;
+			z-index: 2;
+			a {
+				padding-top: 5px;
+				padding-right: 5%;
+			}
+			overflow: hidden;
+			transition: max-height 0.5s;
+		}
+		@include screen-less(600px) {
+			left: 32%;
 		}
 	}
 }
@@ -111,6 +136,10 @@ body[nav-active] {
 				// 	padding: 10px;
 				// }
 			}
+		}
+		nav.nav-social {
+			max-height: 50px;
+
 		}
 	}
 }
