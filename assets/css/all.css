@@ -893,15 +893,17 @@ article p {
 
 article a:not(.kg-bookmark-container) {
   padding: 0 10px;
-  background-color: #00A6D6;
-  border-radius: 5px;
+  background: none;
+  border: 0;
+  color: #00A6D6;
+  border-radius: 0;
   text-decoration: none;
   transition: color 0.3s, background-color 0.3s;
 }
 
 article a:not(.kg-bookmark-container):hover {
-  background-color: white;
-  color: #00A6D6;
+  background: none;
+  color: #FFFFFF;
 }
 
 article ul {
@@ -930,9 +932,7 @@ article blockquote:before {
 
 .hero {
   text-align: center;
-  height: calc(100vh - 70px - 75px - 20px);
-  width: 90%;
-  left: 5%;
+  height: 165px;
   position: relative;
   overflow: hidden;
 }
@@ -1035,6 +1035,7 @@ article blockquote:before {
   height: 100%;
   overflow: hidden;
   pointer-events: none;
+  z-index: -1;
 }
 
 #background-doodle .row {
@@ -1058,6 +1059,107 @@ article blockquote:before {
   transform: translateX(5vmax);
 }
 
+.ieee-officer-container {
+  text-align: center;
+}
+
+.ieee-officer-container > p {
+  margin: 30px 0 30px 0;
+  line-height: 1.5;
+}
+
+.ieee-decal-warning {
+  font-size: 1.6em;
+  padding: 1em;
+  text-align: center;
+}
+
+.ieee-decal-warning a {
+  color: #004080;
+  text-decoration: underline;
+}
+
+.ieee-officer-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ieee-officer-divider:before, .ieee-officer-divider:after {
+  background-color: #aaa;
+  display: inline-block;
+  content: '';
+  width: 100px;
+  height: 2px;
+  margin: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .ieee-officer-divider {
+    flex-direction: column;
+  }
+  .ieee-officer-divider:before, .ieee-officer-divider:after {
+    width: 80px;
+  }
+}
+
+.ieee-officer-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.ieee-officer-card {
+  background-color: #00A6D6;
+  border-radius: 2px;
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.ieee-officer-card img {
+  height: 150px;
+  border-radius: 75px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.ieee-officer-card h3 {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+
+.ieee-officer-card p {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.ieee-officer-card .ieee-officer-socials {
+  cursor: default;
+  display: block;
+  margin-top: 10px;
+}
+
+.ieee-officer-card .ieee-officer-socials a {
+  color: #00629b;
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: color 80ms ease;
+}
+
+.ieee-officer-card .ieee-officer-socials a:hover {
+  color: #004872;
+}
+
 #background-shapes {
   position: absolute;
   top: 0;
@@ -1066,6 +1168,7 @@ article blockquote:before {
   height: 100%;
   pointer-events: none;
   overflow: hidden;
+  z-index: -1;
 }
 
 #background-shapes img {
@@ -1242,11 +1345,11 @@ section.right:before {
   cursor: pointer;
   -webkit-clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
           clip-path: polygon(0 80%, 50% 95%, 100% 80%, 100% 85%, 50% 100%, 0 85%);
-  -webkit-animation: inline-u59543224 1s infinite alternate;
-          animation: inline-u59543224 1s infinite alternate;
+  -webkit-animation: inline-udeba1e6b 1s infinite alternate;
+          animation: inline-udeba1e6b 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-u59543224 {
+@-webkit-keyframes inline-udeba1e6b {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1256,7 +1359,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-u59543224 {
+@keyframes inline-udeba1e6b {
   from {
     opacity: 1;
     transform: translateY(5px);
@@ -1318,11 +1421,11 @@ section.right:before {
 
 #slide-show .btn#fwd-btn .arrow {
   margin-left: 50px;
-  -webkit-animation: inline-uff9993a5 1s infinite alternate;
-          animation: inline-uff9993a5 1s infinite alternate;
+  -webkit-animation: inline-u0a1513e1 1s infinite alternate;
+          animation: inline-u0a1513e1 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-uff9993a5 {
+@-webkit-keyframes inline-u0a1513e1 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1333,7 +1436,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-uff9993a5 {
+@keyframes inline-u0a1513e1 {
   from {
     opacity: 1;
     transform: translateX(5px) rotate(90deg);
@@ -1346,11 +1449,11 @@ section.right:before {
 
 #slide-show .btn#bkw-btn .arrow {
   margin-right: 50px;
-  -webkit-animation: inline-u39bb9b35 1s infinite alternate;
-          animation: inline-u39bb9b35 1s infinite alternate;
+  -webkit-animation: inline-u8eb7a10b 1s infinite alternate;
+          animation: inline-u8eb7a10b 1s infinite alternate;
 }
 
-@-webkit-keyframes inline-u39bb9b35 {
+@-webkit-keyframes inline-u8eb7a10b {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
@@ -1361,7 +1464,7 @@ section.right:before {
   }
 }
 
-@keyframes inline-u39bb9b35 {
+@keyframes inline-u8eb7a10b {
   from {
     opacity: 1;
     transform: translateX(-5px) rotate(-90deg);
@@ -1450,7 +1553,7 @@ main #slide-caption {
   width: 200px;
   height: 280px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #032b0d;
 }
 
 .committee .officers .officer-card:before {

@@ -6,6 +6,7 @@
     height: 100%;
     overflow: hidden;
     pointer-events: none;
+    z-index:-1;
     .row {
         display: flex;
         justify-content: space-between;
