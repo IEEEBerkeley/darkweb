@@ -1,5 +1,5 @@
 article {
-    width: 80vw * 0.9;
+    width: 960px;
     @include screen-less(400px) {
         width: 90vw;
     }
@@ -7,6 +7,7 @@ article {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 100px;
 
     .kg-image-card, .kg-embed-card, .kg-gallery-container, .kg-bookmark-card {
         width: 100%;
@@ -112,6 +113,7 @@ article {
     }
 
     h1, h2, h3, h4, h5 {
+        font-weight: 700;
         text-align: center;
         margin: 0.4em auto;
     }
@@ -126,13 +128,13 @@ article {
 
     h2 {
         // font-size: 50px;
-        @include fluid-type(300, 1535, 30, 50, px);
-        letter-spacing: 3px;
+        @include fluid-type(300, 1535, 30, 40, px);
+        // letter-spacing: 3px;
     }
 
     h3 {
         // font-size: 45px;
-         @include fluid-type(300, 1535, 28, 45, px);
+         @include fluid-type(300, 1535, 28, 40, px);
         letter-spacing: 3px;
     }
 
@@ -155,7 +157,7 @@ article {
     }
 
     a:not(.kg-bookmark-container) {
-        padding: 0 10px;
+        //padding: 0 10px;
         background: none;
         border: 0;
         color: $blue;
@@ -168,19 +170,10 @@ article {
         }
     }
 
-    ul {
-        margin: 0 0;
-        li {
-
-        }
+    ul, ol {
+        margin: 0;
     }
 
-    ol {
-        margin: 0 0;
-        li {
-
-        }
-    }
     blockquote {
         position: relative;
         margin: 1em 60px;

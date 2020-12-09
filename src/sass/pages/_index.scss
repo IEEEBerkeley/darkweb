@@ -78,10 +78,15 @@
 main {
 	.title, #slide-caption {
 	    letter-spacing: 3px;
-	    font-size: 40px;
+	    font-size: 24px;
 	    text-align: center;
 	}
 	#slide-caption {
-		margin-bottom: 100px;
+		margin: 20px 0 80px;
 	}
+}
+
+#dw-home-features {
+	margin: 0 auto;
+	max-width: 960px;
 }
