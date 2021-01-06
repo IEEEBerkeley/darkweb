@@ -13,13 +13,14 @@
 3. Create an empty directory for Ghost
 4. cd into the empty directory
 5. Run `ghost install local --no-start`
-6. From within the Ghost directory `cd content/themes/`
-7. Clone this repository inside of the themes folder
-8. `cd darkweb/src`
-9. Run `npm install`
-10. Run `npm run watch`
-11. Follow the procedures to [Selecting Theme](#selecting-theme) (darkweb)
-12. Follow the procedures to [Importing Content](#importing-content)
+6. Start ghost with `ghost start` (ghost is now accessible through localhost:2368 but we won't use that)
+7. From within the Ghost directory `cd content/themes/`
+8. Clone this repository inside of the themes folder
+9. `cd darkweb/src`
+10. Run `npm install`
+11. Run `npm run watch`
+12. Follow the procedures to [Selecting Theme](#selecting-theme) (darkweb)
+13. Follow the procedures to [Importing Content](#importing-content)
 
 #### Selecting Theme
 1. Head to your local Ghost Admin portal (usually found at [http://localhost:3000/ghost](http://localhost:3000/ghost))
