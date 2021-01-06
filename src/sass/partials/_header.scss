@@ -85,8 +85,7 @@ header {
 	}
 	nav.nav-social {
 		display: flex;
-		flex-direction: column;
-		position: fixed;
+		flex-direction: row;
 		right: 1.5%;
 		top: 4.5%;
 		a {
