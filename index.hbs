@@ -1,10 +1,22 @@
 {{!-- Home Page --}}
 {{!< default}}
 <main>
-	<div class="hero">
-		<div class="org-name">UC BERKELEY IEEE</div>
-		<div class="org-description">ADVANCING TECHNOLOGY FOR HUMANITY</div>
-		<div class="org-age">Since 1912</div>
+	<div id="slide-show">
+		<div id="fwd-btn" class="btn">
+			<div class="arrow"></div>
+		</div>
+		<div class="image-container">
+			<div class="image-list">
+				<img src="{{asset 'images/opportunities.png'}}" caption="Opportunities @ IEEE"></img>
+				<img src="{{asset 'images/handson.png'}}" caption="Hands-on Industry Events"></img>
+				<img src="{{asset 'images/fairs.png'}}" caption="IEEE Fairs"></img>
+				<img src="{{asset 'images/talks.png'}}" caption="Talks hosted @ IEEE"></img>
+			</div>
+		</div>
+        <div id="slide-caption"></div>
+		<div id="bkw-btn" class="btn">
+			<div class="arrow"></div>
+		</div>
 	</div>
 
 	<div id="dw-home-features">
@@ -27,25 +39,6 @@
 		</section>
 	</div>
 
-	<h1 class="title">OUR COMMITTEES</h1>
-
-	<div id="slide-show">
-		<div id="fwd-btn" class="btn">
-			<div class="arrow"></div>
-		</div>
-		<div class="image-container">
-			<div class="image-list">
-				<img src="{{asset 'images/opportunities.png'}}" caption="Opportunities @ IEEE"></img>
-				<img src="{{asset 'images/handson.png'}}" caption="Hands-on Industry Events"></img>
-				<img src="{{asset 'images/fairs.png'}}" caption="IEEE Fairs"></img>
-				<img src="{{asset 'images/talks.png'}}" caption="Talks hosted @ IEEE"></img>
-			</div>
-		</div>
-		<div id="bkw-btn" class="btn">
-			<div class="arrow"></div>
-		</div>
-	</div>
-	<div id="slide-caption"></div>
 </main>
 <script>
 	let imgs = Array.from(document.querySelectorAll('.image-list img'));

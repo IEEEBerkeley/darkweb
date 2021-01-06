@@ -76,13 +76,14 @@
 }
 
 main {
-	.title, #slide-caption {
+	.title {
 	    letter-spacing: 3px;
 	    font-size: 24px;
 	    text-align: center;
 	}
 	#slide-caption {
-		margin: 20px 0 80px;
+		padding: 1em;
+		width: 25em;
 	}
 }
 
