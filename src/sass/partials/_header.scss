@@ -1,9 +1,11 @@
 header {
+	background: rgba(50, 50, 50, 0.5);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	.image-logo {
 		height: 80%;
+		min-width: 23em;
 		z-index: 3;
 		text-decoration: none;
 		img {
@@ -15,6 +17,7 @@ header {
 	}
 	height: 70px;
 	padding: 10px 10vw;
+	margin-bottom: 1em;
 	nav {
 		display: flex;
 		.hamburger {
