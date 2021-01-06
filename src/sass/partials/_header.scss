@@ -5,9 +5,12 @@ header {
 	.image-logo {
 		height: 80%;
 		z-index: 3;
+		text-decoration: none;
 		img {
 			height: 100%;
 			z-index: 3;
+			float: left;
+			margin-right: 10px;
 		}
 	}
 	height: 70px;
