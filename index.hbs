@@ -48,7 +48,7 @@
 	document.querySelector('#bkw-btn').onclick = () => {
 		index = (imgs.length + index + 1) % imgs.length;
 		imgs[index].scrollIntoView({
-			block: "start",
+			block: "end",
 			inline: "nearest",
 			behavior: 'smooth'
 		});
@@ -58,7 +58,7 @@
 	document.querySelector('#fwd-btn').onclick = () => {
 		index = (imgs.length + index - 1) % imgs.length;
 		imgs[index].scrollIntoView({
-			block: "start",
+			block: "end",
 			inline: "nearest",
 			behavior: 'smooth'
 		});
