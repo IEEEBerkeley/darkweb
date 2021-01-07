@@ -13,15 +13,19 @@
     "build": "npm-run-all -c -s sass:build",
     "dev": "NODE_ENV=development webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "NODE_ENV=production webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "zip": "run-script-os",
+    "zip:win32": "cd .. && 7z a -r -x!.git -x!src -x!darkweb.zip darkweb.zip *",
+    "zip:default": "cd .. && zip -r darkweb.zip ./* -x '*.git*' -x '*src*' -x 'darkweb.zip'"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.12",
+    "browser-sync": "^2.26.13",
     "browser-sync-webpack-plugin": "^2.0.1",
     "laravel-mix": "^5.0.9",
     "node-sass": "^4.14.1",
+    "run-script-os": "^1.0.7",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.2",
