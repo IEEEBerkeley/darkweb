@@ -12,11 +12,24 @@ window.onresize = () => {
 
 // TODO: Use a CSS or more JS way of doing things
 let scrollBtn = document.querySelector('#scroll-btn');
-scrollBtn.onclick = () => {
-	let hero = document.querySelector('.hero');
-	hero.nextElementSibling.scrollIntoView({
-		block: "start",
-		inline: "nearest",
-		behavior: 'smooth'
-	});
+if (scrollBtn) {
+	scrollBtn.onclick = () => {
+		let hero = document.querySelector('.hero');
+		hero.nextElementSibling.scrollIntoView({
+			block: "start",
+			inline: "nearest",
+			behavior: 'smooth'
+		});
+	}
+}
+
+window.onscroll = () => {
+	const header = document.querySelector('header');
+	let offsetTop = document.documentElement.scrollTop;
+	let headerHeight = header.offsetHeight;
+	if (offsetTop > headerHeight) {
+		header.setAttribute('scroll', '');
+	} else {
+		header.removeAttribute('scroll');
+	}
 }

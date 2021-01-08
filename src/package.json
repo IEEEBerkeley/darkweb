@@ -9,7 +9,7 @@
     "ghost:watch": "cd ../../../../ && ghost start --development",
     "ghost:stop": "cd ../../../../ && ghost stop",
     "browser:watch": "browser-sync start --config bs-config.js",
-    "watch": "NODE_ENV=development webpack --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "webpack --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "build": "npm-run-all -c -s sass:build",
     "dev": "NODE_ENV=development webpack --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
