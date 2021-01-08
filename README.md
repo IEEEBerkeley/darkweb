@@ -22,6 +22,12 @@
 12. Follow the procedures to [Selecting Theme](#selecting-theme) (darkweb)
 13. Follow the procedures to [Importing Content](#importing-content)
 
+#### Deploying theme to site
+1. cd to the *src* directory
+1. `npm run build`
+2. `npm run zip`
+3. With the new ZIP file, upload it to the Ghost web admin interface at: Settings -> Design -> Upload a theme -> upload ZIP
+
 #### Selecting Theme
 1. Head to your local Ghost Admin portal (usually found at [http://localhost:3000/ghost](http://localhost:3000/ghost))
 2. Go to `Design`, scroll down, and activate `darkweb`
