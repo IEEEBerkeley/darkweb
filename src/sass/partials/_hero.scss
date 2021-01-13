@@ -13,15 +13,23 @@
         // margin-top: 100px;
         margin-top: 75px;
     }
+
     h2 {
         // font-size: 40px;
         @include fluid-type(300, 1535, 35, 40, px);
         font-weight: 200;
         padding: 0 20px;
     }
+
+    h3 {
+        // font-size: 40px;
+        @include fluid-type(300, 1535, 25, 30, px);
+        font-weight: 200;
+        padding: 0 120px;
+    }
+
     overflow: hidden;
     // Should be in custom pages
-
     .org-name, .org-description, .org-age {
         text-align: center;
         letter-spacing: 5px;
