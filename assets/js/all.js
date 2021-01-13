@@ -15,9 +15,10 @@ let scrollBtn = document.querySelector('#scroll-btn');
 if (scrollBtn) {
 	scrollBtn.onclick = () => {
 		let hero = document.querySelector('.hero');
-		hero.nextElementSibling.scrollIntoView({
-			block: "start",
-			inline: "nearest",
+		let eTop = hero.nextElementSibling.offsetTop;
+		let headerHeight = document.querySelector('header').offsetHeight;
+		window.scroll({
+			top: eTop - headerHeight - 10,
 			behavior: 'smooth'
 		});
 	}
