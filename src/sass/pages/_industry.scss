@@ -1,36 +1,55 @@
 .sponsor-container {
-	display: flex;
-	flex-wrap: wrap;
-	width: 90vw;
-	margin: 0 auto;
-	h1 {
-		font-size: 32px;
-		margin-bottom: 30px;
-	}
-	.sponsor-package {
-		text-align: center;
-		width: 50%;
-		.iframe-container {
-			position: relative;
-			display: inline-block;
-			margin: 0 auto;
-			@include corner(40px, $blue);			
-			iframe {
-				height: 100%;
-				width: 100%;
-				outline: none;
-				border: none;
-			}
-		}
-	}
-	.sponsor-section {
-		text-align: center;
-		width: 50%;
-		.sponsor-list {
-			width: 50%;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-		}
-	}
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .sponsor-package {
+        text-align: center;
+        width: 50%;
+
+        .iframe-container {
+            position: relative;
+            display: inline-block;
+            margin: 0 auto;
+            @include corner(40px, $blue);
+            width: 80%;
+
+            a {
+                background-color: rgba(255,255,255,0.4);
+                width: 100%;
+                height: 45vh;
+                display: flex;
+                cursor: pointer;
+                justify-content: center;
+                align-items: center;
+                font-size: 40px;
+                text-decoration: none;
+            }
+
+            iframe {
+                height: 100%;
+                width: 100%;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+
+    .sponsor-section {
+        text-align: center;
+        width: 50%;
+
+        .sponsor-list {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }
