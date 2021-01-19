@@ -51,12 +51,13 @@
 	let imgs = Array.from(document.querySelectorAll('.image-list img'));
 	let cap = document.querySelector('#slide-caption');
 	let index = 0;
+	const slideContainer = document.querySelector('#slide-show .image-container');
+	slideContainer.offsetWidth;
 
 	document.querySelector('#bkw-btn').onclick = () => {
 		index = (imgs.length + index + 1) % imgs.length;
-		imgs[index].scrollIntoView({
-			block: "start",
-			inline: "nearest",
+		document.querySelector('#slide-show .image-list').scroll({
+			left: index * slideContainer.offsetWidth,
 			behavior: 'smooth'
 		});
 		cap.innerText = imgs[index].getAttribute('caption');
@@ -64,9 +65,8 @@
 
 	document.querySelector('#fwd-btn').onclick = () => {
 		index = (imgs.length + index - 1) % imgs.length;
-		imgs[index].scrollIntoView({
-			block: "start",
-			inline: "nearest",
+		document.querySelector('#slide-show .image-list').scroll({
+			left: index * slideContainer.offsetWidth,
 			behavior: 'smooth'
 		});
 		cap.innerText = imgs[index].getAttribute('caption');
