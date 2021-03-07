@@ -46,6 +46,31 @@
   }
 }
 
+.ieee-officer-divider-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  &:before, &:after {
+    background-color: #aaa;
+    display: inline-block;
+    content: '';
+    width: 100px;
+    height: 2px;
+    margin: 0 20px;
+  }
+
+  @media(max-width: 600px) {
+    & {
+      flex-direction: column;
+    }
+    &:before, &:after {
+      width: 80px;
+    }
+  }
+}
+
 .ieee-officer-group {
   display: flex;
   justify-content: center;
