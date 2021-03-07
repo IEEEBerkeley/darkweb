@@ -23,8 +23,9 @@
 .ieee-officer-divider {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+//   align-items: center;
+//   flex-wrap: wrap;
+  
 
   &:before, &:after {
     background-color: #aaa;
