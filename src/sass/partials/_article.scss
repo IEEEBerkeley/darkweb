@@ -1,7 +1,7 @@
 article {
     width: 960px;
     @include screen-less(400px) {
-        
+    
     }
     display: block;
     margin: 0 auto;
