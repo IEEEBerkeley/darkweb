@@ -47,19 +47,15 @@
 }
 
 .ieee-officer-divider-2 {
+  background-color: #aaa;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  content: '';
+  width: 100px;
+  height: 2px;
+  margin: 0 20px;
 
-  &:before, &:after {
-    background-color: #aaa;
-    display: inline-block;
-    content: '';
-    width: 100px;
-    height: 2px;
-    margin: 0 20px;
-  }
 
   @media(max-width: 600px) {
     & {
