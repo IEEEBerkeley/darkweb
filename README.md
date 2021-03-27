@@ -12,7 +12,7 @@
 2. Verify Ghost's installation by running `ghost --version`
 3. Create an empty directory for Ghost
 4. cd into the empty directory
-5. Run `ghost install local --no-start`
+5. Run `ghost install 3.41.6 --local --no-start`
 6. Start ghost with `ghost start` (ghost is now accessible through localhost:2368 but we won't use that)
 7. From within the Ghost directory `cd content/themes/`
 8. Clone this repository inside of the themes folder
