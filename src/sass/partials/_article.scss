@@ -27,6 +27,8 @@ article {
     .kg-image-card {
         width: 80%;
         // width: 80vw * 0.8;
+        height: auto;
+        object-fit: contain;
         .kg-image {
             display: block;
             width: 100%;
